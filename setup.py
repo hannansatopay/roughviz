@@ -14,7 +14,7 @@ setuptools.setup(
     version="4.0.0",
     author="Hannan Satopay",
     author_email="sathannan@hotmail.com",
-    description="A visualization library for creating sketchy/hand-drawn styled charts.",
+    description="A python visualization library for creating sketchy/hand-drawn styled charts.",
     long_description=long_description,
     long_description_content_type="text/markdown",
     license="MIT",
