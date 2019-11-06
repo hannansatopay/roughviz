@@ -18,6 +18,7 @@ height: {{kwargs.height|default(400)|int - 20}}px!important;
 
 <div id={{id_name|tojson}}></div>
 
+<script src="https://requirejs.org/docs/release/2.3.6/minified/require.js"></script>
 <script>
 require.config({paths: {roughViz: "https://unpkg.com/rough-viz@1.0.2/dist/roughviz.min"}});
 require(["roughViz"], function(roughViz) {
