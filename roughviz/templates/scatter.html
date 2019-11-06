@@ -1,0 +1,64 @@
+<html>
+<head>
+<style>
+.xAxis{{id_name}} .tick text
+{
+  text-anchor: middle!important;
+  transform: rotate(0)!important;
+}
+#{{id_name}}{
+height: {{kwargs.height|default(400)|int - 20}}px!important;
+}
+#{{id_name}} svg{
+height: {{kwargs.height|default(400)|int - 20}}px!important;
+}
+</style>
+</head>
+<body>
+
+<div id={{id_name|tojson}}></div>
+
+<script src="https://requirejs.org/docs/release/2.3.6/minified/require.js"></script>
+<script>
+require.config({paths: {roughViz: "https://unpkg.com/rough-viz@1.0.2/dist/roughviz.min"}});
+require(["roughViz"], function(roughViz) {
+
+new roughViz.Scatter(
+  {
+    element: "#".concat({{id_name|tojson}}),
+    data: {
+      labels: {{labels}},
+      values: {{values}}
+    },
+	axisFontSize: {{kwargs.axisFontSize|default("1.5rem")|tojson}},
+	axisRoughness: {{kwargs.axisRoughness|default(0.5)}},
+	axisStrokeWidth: {{kwargs.axisStrokeWidth|default(0.5)}},
+	bowing: {{kwargs.bowing|default(0)}},
+	colors: {{kwargs.colors|default("skyblue")|tojson}},
+	fillStyle: {{kwargs.fillStyle|default("cross-hatch")|tojson}},
+	fillWeight: {{kwargs.fillWeight|default(0)}},
+	font: {{kwargs.font|default(0)}},
+	highlight: {{kwargs.highlight|default("green")|tojson}},
+	innerStrokeWidth: {{kwargs.innerStrokeWidth|default(0)}},
+	interactive: true,
+	labelFontSize: {{kwargs.labelFontSize|default("2rem")|tojson}},
+	margin: {top: 50, right: 20, bottom: 70, left: 100},
+	radius: {{kwargs.radius|default(8)}},
+	roughness: {{kwargs.roughness|default(1)}},
+	simplification: {{kwargs.simplification|default(0.2)}},
+	stroke: {{kwargs.stroke|default("black")|tojson}},
+	strokeWidth: {{kwargs.strokeWidth|default(1)}},
+	title: {{kwargs.title|default("")|tojson}},
+	titleFontSize: {{kwargs.titleFontSize|default("3rem")|tojson}},
+	tooltipFontSize: {{kwargs.tooltipFontSize|default("3rem")|tojson}},
+	xLabel: {{kwargs.xLabel|default("")|tojson}},
+	yLabel: {{kwargs.yLabel|default("")|tojson}},
+	height: {{kwargs.height|default(400)}},
+	width: {{kwargs.width|default(700)}}
+  }
+);
+});
+</script>
+
+</body>
+</html>
