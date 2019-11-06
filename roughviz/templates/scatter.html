@@ -27,8 +27,8 @@ new roughViz.Scatter(
   {
     element: "#".concat({{id_name|tojson}}),
     data: {
-      labels: {{labels}},
-      values: {{values}}
+      x: {{x}},
+      y: {{y}}
     },
 	axisFontSize: {{kwargs.axisFontSize|default("1.5rem")|tojson}},
 	axisRoughness: {{kwargs.axisRoughness|default(0.5)}},
