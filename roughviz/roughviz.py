@@ -49,14 +49,3 @@ def donut(labels, values, **kwargs):
                              values=values.tolist(),
                              kwargs = kwargs)
     return HTML(output)
-
-def scatter(x, y, **kwargs):
-
-    data = pkgutil.get_data(__package__, 'templates/scatter.html')
-    template = Template(data.decode("utf-8"))
-    id_name = ''.join(random.choice(string.ascii_lowercase) for i in range(10))
-    output = template.render(id_name=id_name,
-                             x=x.tolist(),
-                             y=y.tolist(),
-                             kwargs = kwargs)
-    return HTML(output)

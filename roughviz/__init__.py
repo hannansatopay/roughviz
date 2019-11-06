@@ -5,5 +5,4 @@ from .roughviz import (
   barh,
   pie,
   donut,
-  scatter
 )

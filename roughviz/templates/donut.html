@@ -31,25 +31,17 @@ new roughViz.Donut(
       values: {{values}}
     },
 	bowing: {{kwargs.bowing|default(0)}},
-	colors: ['coral', 'skyblue', '#66c2a5', 'tan', '#8da0cb', '#e78ac3', '#a6d854', '#ffd92f', 'tan', 'orange'],
 	fillStyle: {{kwargs.fillStyle|default("cross-hatch")|tojson}},
 	fillWeight: {{kwargs.fillWeight|default(0)}},
 	font: {{kwargs.font|default(0)}},
 	highlight: {{kwargs.highlight|default("green")|tojson}},
 	innerStrokeWidth: {{kwargs.innerStrokeWidth|default(0)}},
-	interactive: true,
-	legend: false,
-	legendPosition: 'right',
-	margin: {top: 50, right: 20, bottom: 70, left: 100},
-	padding: {{kwargs.padding|default(0.1)}},
 	roughness: {{kwargs.roughness|default(1)}},
 	simplification: {{kwargs.simplification|default(0.2)}},
 	strokeWidth: {{kwargs.strokeWidth|default(1)}},
 	title: {{kwargs.title|default("")|tojson}},
 	titleFontSize: {{kwargs.titleFontSize|default("3rem")|tojson}},
 	tooltipFontSize: {{kwargs.tooltipFontSize|default("3rem")|tojson}},
-	height: {{kwargs.height|default(400)}},
-	width: {{kwargs.width|default(700)}}
   }
 );
 });
