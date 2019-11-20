@@ -20,7 +20,7 @@ setuptools.setup(
     license="MIT",
     url="https://github.com/hannansatopay/roughviz",
     packages=setuptools.find_packages(),
-    install_requires=[],
+    install_requires=['Jinja2'],
     package_data=package_data,
     classifiers=[
         "Development Status :: 5 - Production/Stable",
