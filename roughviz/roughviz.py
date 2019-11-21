@@ -6,6 +6,7 @@ import json
 import pkgutil
 import pandas as pd
 
+
 def generate_template(data, labels, values, **kwargs):
     template = Template(data.decode("utf-8"))
     id_name = ''.join(random.choice(string.ascii_lowercase) for i in range(10))
