@@ -11,8 +11,9 @@ roughviz is a python visualization library for creating sketchy/hand-drawn style
 </ul>
 
 ### Installation
-[![PyPI](https://img.shields.io/pypi/v/roughviz?color=dark%20green&style=for-the-badge)](https://pypi.org/project/roughviz/){:target="_blank"}
-[![PyPI - Downloads](https://img.shields.io/pypi/dm/roughviz?color=dark%20green&style=for-the-badge)](https://pypi.org/project/roughviz/){:target="_blank"}
+[![PyPI](https://img.shields.io/pypi/v/roughviz?color=dark%20green&style=for-the-badge)](https://pypi.org/project/roughviz/)
+[![PyPI - Downloads](https://img.shields.io/pypi/dm/roughviz?color=dark%20green&style=for-the-badge)](https://pypi.org/project/roughviz/)
+<a href="http://stackoverflow.com" target="_blank">Go</a>
 ```
 pip install roughviz
 ```
