@@ -16,16 +16,16 @@ def generate_template(data):
 
 def bar(labels, values, **kwargs):
     data = pkgutil.get_data(__package__, 'templates/bar.html')
-    generate_template(data)
+    generate_template(data, labels, values, **kwargs)
 
 def barh(labels, values, **kwargs):
     data = pkgutil.get_data(__package__, 'templates/barh.html')
-    generate_template(data)
+    generate_template(data, labels, values, **kwargs)
 
 def pie(labels, values, **kwargs):
     data = pkgutil.get_data(__package__, 'templates/pie.html')
-    generate_template(data)
+    generate_template(data, labels, values, **kwargs)
 
 def donut(labels, values, **kwargs):
     data = pkgutil.get_data(__package__, 'templates/donut.html')
-    generate_template(data)
+    generate_template(data, labels, values, **kwargs)
