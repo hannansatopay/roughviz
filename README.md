@@ -7,6 +7,7 @@ roughviz is a python visualization library for creating sketchy/hand-drawn style
   <li>Horizontal Bar (<code>roughviz.barh</code>) </li>
   <li>Pie (<code>roughviz.pie</code>) </li>
   <li>Donut (<code>roughviz.donut</code>) </li>
+  <li>Stacked Bar (<code>roughviz.stackedbar</code>) </li>
 </ul>
 
 ### Installation
