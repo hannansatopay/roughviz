@@ -27,7 +27,7 @@ new roughViz.StackedBar(
   {
     element: "#".concat({{id_name|tojson}}),
     data: {{values}},
-    labels: {{labels}},
+    labels: {{labels|tojson}},
 	axisFontSize: {{kwargs.axisFontSize|default("1.5rem")|tojson}},
 	axisRoughness: {{kwargs.axisRoughness|default(0.5)}},
 	axisStrokeWidth: {{kwargs.axisStrokeWidth|default(0.5)}},
