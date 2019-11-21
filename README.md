@@ -136,6 +136,39 @@ Optional
 - `titleFontSize` [string]: Font-size for chart title. Default: `'1rem'`.
 - `tooltipFontSize` [string]: Font-size for tooltip. Default: `'0.95rem'`.
 
+### <code id="StackedBar">roughviz.stackedbar</code>
+Required
+- `labels`: Pandas column containing the labels.
+- `values`: Pandas columns (multiple) containing the values.
+```
+roughviz.stackedbar(df["ABC"], df[["XYZ","LMN"]])
+```
+
+Optional
+- `axisFontSize` [string]: Font-size for axes' labels. Default: `'1rem'`.
+- `axisRoughness` [number]: Roughness for x & y axes. Default: `0.5`.
+- `axisStrokeWidth` [number]: Stroke-width for x & y axes. Default: `0.5`.
+- `bowing` [number]: Chart bowing. Default: `0`.
+- `color` [string]: Color for each bar. Default: `'skyblue'`.
+- `fillStyle` [string]: Bar fill-style.
+- `fillWeight` [number]: Weight of inner paths' color. Default: `0.5`.
+- `font`: Font-family to use. You can use `0` or `gaegu` to use `Gaegu`, or `1` or `indie flower` to use `Indie Flower`. Or feed it something else. Default: `Gaegu`.
+- `highlight` [string]: Color for each bar on hover. Default: `'coral'`.
+- `innerStrokeWidth` [number]: Stroke-width for paths inside bars. Default: `1`.
+- `labelFontSize` [string]: Font-size for axes' labels. Default: `'1rem'`.
+- `padding` [number]: Padding between bars. Default: `0.1`.
+- `roughness` [number]: Roughness level of chart. Default: `1`.
+- `simplification` [number]: Chart simplification. Default `0.2`.
+- `stroke` [string]: Color of bars' stroke. Default: `black`.
+- `strokeWidth` [number]: Size of bars' stroke. Default: `1`.
+- `title` [string]: Chart title. Optional.
+- `titleFontSize` [string]: Font-size for chart title. Default: `'1rem'`.
+- `tooltipFontSize` [string]: Font-size for tooltip. Default: `'0.95rem'`.
+- `xLabel` [string]: Label for x-axis.
+- `yLabel` [string]: Label for y-axis.
+- `width` [number]: Width of the chart (in pixels).
+- `height` [number]: Height of the chart (in pixels).
+
 ### Future Plans
 - [ ] Exception Handling
 - [ ] Add Chart: Histogram
