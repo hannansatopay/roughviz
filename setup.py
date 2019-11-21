@@ -11,7 +11,7 @@ package_data = {
 
 setuptools.setup(
     name="roughviz",
-    version="4.0.0",
+    version="4.0.1",
     author="Hannan Satopay",
     author_email="sathannan@hotmail.com",
     description="A python visualization library for creating sketchy/hand-drawn styled charts.",
