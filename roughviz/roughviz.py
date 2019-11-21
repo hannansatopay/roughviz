@@ -8,6 +8,7 @@ import pkgutil
 def generate_template(data, labels, values, **kwargs):
     template = Template(data.decode("utf-8"))
     id_name = ''.join(random.choice(string.ascii_lowercase) for i in range(10))
+    print(labels)
     output = template.render(id_name = id_name,
                              labels = labels.tolist(),
                              values = values.tolist(),
