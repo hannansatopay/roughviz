@@ -25,7 +25,7 @@ import roughviz
 import pandas as pd 
 d = {'col1': [1, 2, 3, 4, 5], 'col2': [3, 4, 10, 2, 0.9]}
 df = pd.DataFrame(data=d)
-roughviz.bar(df["col1"], df2["col2"])
+roughviz.bar(df["col1"], df["col2"])
 ```
 Note: The library works seamlessly with Jupyter Notebook
 
