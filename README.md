@@ -1,8 +1,10 @@
-# roughviz [![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://github.com/hannansatopay)
+# roughviz
 
 ![roughviz](https://user-images.githubusercontent.com/7835634/69475723-6bce0080-0df6-11ea-8f36-82128cc108ac.jpg)
 
 roughviz is a python visualization library for creating sketchy/hand-drawn styled charts.
+
+[![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://github.com/hannansatopay)
 
 ### Available Charts
 <ul>
