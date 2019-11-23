@@ -1,3 +1,6 @@
+## roughviz
+
+![roughviz](https://user-images.githubusercontent.com/7835634/69475723-6bce0080-0df6-11ea-8f36-82128cc108ac.jpg)
 
 roughviz is a python visualization library for creating sketchy/hand-drawn styled charts.
 
@@ -30,7 +33,7 @@ roughviz.bar(df["col1"], df["col2"])
 Note: The library works seamlessly with Jupyter Notebook
 
 ### API
-See the [wiki](https://github.com/hannansatopay/roughviz/wiki/API) to know the complete details about the APIs for all the supported charts along with their optional parameters.
+The API Documentation is available on: [Wiki](https://github.com/hannansatopay/roughviz/wiki/API)
 
 ### Future Plans
 - [ ] Exception Handling
