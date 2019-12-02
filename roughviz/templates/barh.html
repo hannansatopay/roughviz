@@ -1,19 +1,4 @@
 <html>
-<head>
-<style>
-.xAxis{{id_name}} .tick text
-{
-  text-anchor: middle!important;
-  transform: rotate(0)!important;
-}
-#{{id_name}}{
-height: {{kwargs.height|default(400)|int - 20}}px!important;
-}
-#{{id_name}} svg{
-height: {{kwargs.height|default(400)|int - 20}}px!important;
-}
-</style>
-</head>
 <body>
 
 <div id={{id_name|tojson}}></div>
@@ -52,9 +37,18 @@ new roughViz.BarH(
 	xLabel: {{kwargs.xLabel|default("")|tojson}},
 	yLabel: {{kwargs.yLabel|default("")|tojson}},
 	height: {{kwargs.height|default(400)}},
-	width: {{kwargs.width|default(700)}}
+	width: {{kwargs.width|default(700)}},
+	interactive: {{kwargs.interactive|default(true)|tojson}}
   }
 );
+	var text = document.querySelectorAll(".xAxis{{id_name}} .tick text");
+	var i;
+	for (i = 0; i < text.length; i++) {
+		text[i].setAttribute("transform", "rotate(0)");
+		text[i].style.textAnchor="middle";
+	}
+	document.getElementById("{{id_name}}").style.height = "{{kwargs.height|default(400)|int - 20}}px";
+	document.querySelector("#{{id_name}} svg").style.height = "{{kwargs.height|default(400)|int - 20}}px";
 });
 </script>
 
